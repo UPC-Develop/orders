@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Orders.APIBusiness.API</name>
+    </assembly>
+    <members>
+        <member name="T:API.AppSettingsProvider">
+            <summary>
+            AppSettingsProvider
+            </summary>
+        </member>
+        <member name="P:API.AppSettingsProvider.config">
+            <summary>
+            config
+            </summary>
+        </member>
+        <member name="T:API.ConfigSettings">
+            <summary>
+            Clase para datos de configuracion
+            Author: James Huiza
+            Date: 01 Enero 2021
+            </summary>
+        </member>
+        <member name="P:API.ConfigSettings.ApplicationName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:API.ConfigSettings.ApplicationType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:API.ConfigSettings.OrganizationName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:API.ConfigSettings.Version">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:API.ConfigSettings.CircuitBreak">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:API.CircuitBreak">
+            <summary>
+            CircuitBreaker
+            </summary>
+        </member>
+        <member name="P:API.CircuitBreak.HandledEventsAllowed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:API.CircuitBreak.DurationOfBreakCircuit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:API.CircuitBreak.RetryCount">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:API.CircuitBreak.SleepDuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:API.CircuitBreak.HandlerLifetime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:API.Startup">
+            <summary>
+            /
+            </summary>
+        </member>
+        <member name="M:API.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:API.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:API.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:API.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="M:Orders.APIBusiness.API.Controllers.Product_OrderController.List_History_Orders(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="customer_id"></param>
+            <param name="active"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Orders.APIBusiness.API.Controllers.Product_OrderController.List_booking_Orders(System.DateTime,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="booking_date"></param>
+            <param name="status"></param>
+            <param name="active"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
