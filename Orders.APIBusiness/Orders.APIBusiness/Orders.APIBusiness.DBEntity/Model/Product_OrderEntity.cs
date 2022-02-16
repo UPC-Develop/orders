@@ -23,5 +23,7 @@ namespace Orders.APIBusiness.DBEntity.Model
         public String currency_type { get; set; }
         public DateTime start_hour { get; set; }
         public DateTime end_hour { get; set; }
+
+        public String bflag { get; set; }
     }
 }

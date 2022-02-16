@@ -65,6 +65,8 @@ namespace Orders.APIBusiness.API.Controllers
         /// <summary>
         /// 
         /// </summary>
+        /// <param name="campus_id"></param>
+        /// <param name="product_id"></param>
         /// <param name="booking_date"></param>
         /// <param name="status"></param>
         /// <param name="active"></param>
@@ -73,7 +75,7 @@ namespace Orders.APIBusiness.API.Controllers
         [AllowAnonymous]
         [HttpGet]
         [Route("list-booking-orders")]
-        public ActionResult List_booking_Orders(DateTime booking_date, String status, int active)
+        public ActionResult List_booking_Orders(Int32 campus_id, Int32 product_id, DateTime booking_date, String status, int active)
         {
             var ret = new BaseResponse();
 
@@ -82,10 +84,7 @@ namespace Orders.APIBusiness.API.Controllers
 
                 if (booking_date != null && !String.IsNullOrEmpty(status) && active != 0)
                 {
-                    ret = _Product_OrderRepository.List_Booking_Orders(booking_date, status, active);
-
-
-
+                    ret = _Product_OrderRepository.List_Booking_Orders(campus_id, product_id, booking_date, status, active);
                 }
                 else
                 {

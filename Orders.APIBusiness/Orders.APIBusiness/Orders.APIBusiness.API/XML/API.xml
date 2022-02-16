@@ -113,10 +113,12 @@
             <param name="active"></param>
             <returns></returns>
         </member>
-        <member name="M:Orders.APIBusiness.API.Controllers.Product_OrderController.List_booking_Orders(System.DateTime,System.String,System.Int32)">
+        <member name="M:Orders.APIBusiness.API.Controllers.Product_OrderController.List_booking_Orders(System.Int32,System.Int32,System.DateTime,System.String,System.Int32)">
             <summary>
             
             </summary>
+            <param name="campus_id"></param>
+            <param name="product_id"></param>
             <param name="booking_date"></param>
             <param name="status"></param>
             <param name="active"></param>
